@@ -8,7 +8,7 @@ This project is built using Nextjs. It utilizes the OpenAI GPT for chat completi
 
 ## Getting Started
 
-First, duplicate the `.env` file into a new file named `.env.local`. Update the value of your OpenAI API key there.
+First, add a `.env` file into the project, add OPEN_AI_KEY= with the value of your OpenAI key.
 
 The first time you are running this project, you will need to install the dependencies. Run this command in your terminal:
 
