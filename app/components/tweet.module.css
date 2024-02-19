@@ -1,0 +1,159 @@
+.tweetWrapper {
+  border: 1px solid #50555b;
+  background: rgb(21, 32, 43);
+  color: #15202b;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 25px 25px 15px 25px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.inputBox {
+  position: relative;
+  min-height: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-top: 10px;
+  border-bottom: 1px solid #50555b;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetArea {
+  position: relative;
+  min-height: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 1.2rem;
+  background-color: rgb(21, 32, 43);
+  color: #fff;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.tweetArea::-webkit-scrollbar {
+  width: 0px;
+}
+
+.placeholder {
+  position: absolute;
+  margin-top: -3px;
+  font-size: 22px;
+  color: #98a5b1;
+  pointer-events: none;
+}
+
+.input {
+  outline: none;
+  font-size: 17px;
+  min-height: inherit;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.editable {
+  position: relative;
+  z-index: 5;
+}
+
+.readonly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  background: transparent;
+}
+
+.privacy {
+  color: var(--twitter-blue);
+  margin: 15px 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.privacy i {
+  font-size: 18px;
+}
+
+.privacy span {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 7px;
+}
+
+.bottom {
+  display: flex;
+  margin-top: 13px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom .icons {
+  display: inline-flex;
+  padding: 0;
+}
+
+.icons li {
+  list-style: none;
+  color: var(--twitter-blue);
+  font-size: 20px;
+  margin: 0 2px;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.tweet-in-feed-wrapper .icons {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tweet-in-feed-wrapper .icons li {
+  color: rgb(199, 199, 199);
+}
+
+.bottom .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  color: #fff;
+  /* display: none; */
+  font-weight: bold;
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #aab8c2;
+}
+
+.tweetButton {
+  padding: 9px 18px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--twitter-blue);
+  color: #fff;
+  cursor: pointer;
+}
+
+.tweetButton.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tweetButton:hover {
+  background: #0d8bd9;
+}
