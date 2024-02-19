@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: rgb(21, 32, 43);
+}
+
+:root {
+  --twitter-blue: #1da1f2;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.highlight {
+  color: var(--twitter-blue);
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: #b7aeb9;
+  border-color: #b7aeb9;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-top-color: var(--twitter-blue);
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+.loading-wrapper span {
+  font-weight: 700;
+  color: var(--twitter-blue);
+  text-align: center;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 36px;
+  }
+}
