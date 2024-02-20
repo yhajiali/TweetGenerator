@@ -60,7 +60,7 @@ const TweetGenerator = () => {
       setError("");
     } catch (error) {
       setError(
-        `Image could not be generated ~ An error occurred calling the Dall-E API`
+        `Image could not be generated ~ An error occurred calling the Replicate API`
       );
       console.error(`An error occurred calling the Dall-E API: ${error}`);
     }
