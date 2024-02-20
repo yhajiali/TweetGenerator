@@ -48,7 +48,7 @@ const TweetGenerator = () => {
   const getImageData = async (prompt: string) => {
     try {
       setLoading(true);
-      const response = await fetch("/api/dall-e", {
+      const response = await fetch("/api/replicate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -86,7 +86,7 @@ const TweetGenerator = () => {
                 ...e,
                 target: {
                   ...e.target,
-                  value: `Generate a ${tone} post about ${e.target.value}.`,
+                  value: `Generate a tweet for twitter with a ${tone} tone, about the following: ${e.target.value}.`,
                 },
               });
               setDisableSubmitButton(false);

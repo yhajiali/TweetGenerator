@@ -24,7 +24,7 @@ export async function POST(req: Request, res: Response) {
     // Ask Dall-E to generate an image based on the prompt
     const response = await openai.images.generate({
       model: "dall-e-2",
-      prompt: prompt,
+      prompt: `Draw me a catchy photo to add to the end of my tweets about: ${prompt}`,
       n: 1,
       size: "1024x1024",
     });
