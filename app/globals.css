@@ -57,8 +57,8 @@ button:disabled:hover {
   border: 5px solid #fff;
   border-radius: 50%;
   border-top-color: var(--twitter-blue);
-  animation: spin 1s ease-in-out infinite;
-  -webkit-animation: spin 1s ease-in-out infinite;
+  animation: spin 0.8s linear infinite;
+  -webkit-animation: spin 0.8s linear infinite;
 }
 
 .loading-wrapper span {
