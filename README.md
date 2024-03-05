@@ -4,7 +4,7 @@ This app generates engaging tweets for your brand.
 
 This project is built using Nextjs. It utilizes the OpenAI GPT for chat completion, and Dall-E for image generation.
 
-<img src="tweet-generator-demo.gif" alt="app demo" width=600>
+<img src="tweet-generator.gif" alt="app demo" width=600>
 
 ## Getting Started
 
